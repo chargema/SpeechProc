@@ -1,0 +1,27 @@
+#N canvas 797 263 494 415 12;
+#X obj 49 -504 int 0;
+#X obj 144 -506 + 1;
+#X floatatom 49 -440 5 0 0 0 - - -;
+#X msg 141 -596 stop;
+#X msg 160 -363 0;
+#X obj 49 -554 metro 10;
+#X obj 160 -402 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 160 -440 sel 1000;
+#X obj 49 -597 inlet;
+#X obj 49 -373 outlet;
+#X text 36 -313 This patch is created to count and send the index to
+the array;
+#X text 33 -275 comment;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 0 0 7 0;
+#X connect 1 0 0 1;
+#X connect 2 0 9 0;
+#X connect 3 0 5 0;
+#X connect 4 0 0 1;
+#X connect 5 0 0 0;
+#X connect 6 0 4 0;
+#X connect 7 0 3 0;
+#X connect 7 0 6 0;
+#X connect 8 0 5 0;

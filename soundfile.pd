@@ -1,0 +1,28 @@
+#N canvas 752 130 450 754 12;
+#X obj 53 74 openpanel;
+#X msg 53 114 open \$1;
+#X obj 53 192 soundfiler;
+#X msg 53 152 read \$1 sound;
+#X obj 53 273 tabplay~ sound;
+#X obj 53 231 t b b;
+#X msg 122 245 set sound;
+#X obj 53 308 outlet~;
+#X obj 53 41 inlet;
+#X text 19 394 This patch is used to open a sound file and write the
+wave into an array.;
+#X text 144 72 << open a file;
+#X text 144 114 << finish openning event;
+#X text 179 151 << read the infomation of the file;
+#X text 165 191 << write it down to the array;
+#X text 174 275 << play the sound \, I use my microphone to cope with
+the sound;
+#X text 330 459 create by J Ma;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 5 0;
+#X connect 3 0 2 0;
+#X connect 4 0 7 0;
+#X connect 5 0 4 0;
+#X connect 5 1 6 0;
+#X connect 6 0 4 0;
+#X connect 8 0 0 0;
